@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+// font-family: 'Oswald', sans-serif;
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.bg-hedader {
+    width: 100%;
+    height: 100vh;
+    background-color: #FBC65C;
+
+
+
+    .bg {
+        height: 100vh;
+        background-image: url(./IMG/bg-header.jpg);
+        position: relative;
+
+        .burgey {
+            img {
+                width: 100%;
+            }
+
+            position: absolute;
+            top: 130px;
+            left: 100px;
+        }
+
+        nav {
+            position: absolute;
+            top: 270px;
+            left: 150px;
+
+            ul {
+                list-style: none;
+                text-align: center;
+
+                .menu {
+                    background-color: white;
+                    padding: 10px;
+                    color: gray;
+                    font-weight: 600;
+                    font-family: 'Oswald', sans-serif;
+                    display: none;
+                }
+
+
+                li {
+                    margin: 0 20px;
+
+                    a {
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 42px;
+                        text-decoration: none;
+                        color: white;
+                        text-shadow: 1px 1px 3px black;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #FBC65C;
+                        }
+                    }
+
+                    .home {
+                        color: #FBC65C;
+                    }
+                }
+            }
+        }
+
+        .number {
+            position: absolute;
+            bottom: 10px;
+            left: 100px;
+            color: white;
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+
+            h1 {
+                font-size: 52px;
+            }
+        }
+    }
+
+}
+
+#section2 {
+    background-color: antiquewhite;
+
+    .container {
+
+        .row {
+            .offer {
+                color: #D3312A;
+                font-weight: 700;
+                font-size: 62px;
+            }
+
+            .tasting {
+                color: gray;
+                font-size: 22px;
+            }
+        }
+    }
+
+    .cheeseburger {
+        width: 100%;
+        height: 550px;
+        background-image: url(./IMG/burger1.jpg);
+        background-size: cover;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        position: relative;
+
+        &:hover {
+            scale: 1.1;
+            transition: .5s;
+        }
+
+        .price {
+            position: absolute;
+            background-color: #FCD07A;
+            color: black;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            font-weight: 600;
+            transform: rotate(-13deg);
+            left: -50px;
+            top: -25px;
+        }
+
+        .dolar {
+            position: absolute;
+            top: 25px;
+            background-color: #D3312A;
+            color: white;
+            font-size: 42px;
+            width: auto;
+            display: inline-block;
+            font-weight: 700;
+            color: #fff;
+            background: #d3312a;
+            padding: 10px 10px;
+            line-height: 1;
+            z-index: 2;
+            text-transform: uppercase;
+            transform: rotate(-4deg);
+            text-shadow: 1px 2px 1px #000;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .chsburger {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            text-transform: uppercase;
+            text-shadow: 1px 2px 3px black;
+            display: none;
+        }
+
+        &:hover .chsburger {
+            display: block;
+
+        }
+
+    }
+
+    .pizza-colors {
+        height: 275px;
+        background-image: url(./IMG/pizza1.jpg);
+        background-size: cover;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        position: relative;
+        transition-duration: .5s;
+
+        &:hover {
+            scale: 1.1;
+            transition: .5s;
+            z-index: 1000;
+        }
+
+        .chsburger {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            text-transform: uppercase;
+            text-shadow: 1px 2px 3px black;
+            display: none;
+        }
+
+        &:hover .chsburger {
+            display: block;
+
+        }
+
+    }
+
+    .burger-retro {
+        height: 275px;
+        background-image: url(./IMG/burger4.jpg);
+        background-size: cover;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        position: relative;
+        transition-duration: .5s;
+
+        &:hover {
+            scale: 1.1;
+            transition: .5s;
+            z-index: 1000;
+        }
+
+        .chsburger {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            text-transform: uppercase;
+            text-shadow: 1px 2px 3px black;
+            display: none;
+        }
+
+        &:hover .chsburger {
+            display: block;
+
+        }
+    }
+
+    .hot-dog {
+        height: 275px;
+        background-image: url(./IMG/hotdog.jpg);
+        background-size: cover;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        position: relative;
+        margin-top: 4px;
+        cursor: pointer;
+
+
+        &:hover {
+            scale: 1.1;
+            transition: .5s;
+            z-index: 1000;
+        }
+
+        .chsburger {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            text-transform: uppercase;
+            text-shadow: 1px 2px 3px black;
+            display: none;
+            transition-duration: .5s;
+        }
+
+        &:hover .chsburger {
+            display: block;
+
+        }
+    }
+
+    .sandwich-torilla {
+        height: 275px;
+        background-image: url(./IMG/sandwich-with-veg-bacon.jpg);
+        background-size: cover;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        position: relative;
+        margin-top: 4px;
+        cursor: pointer;
+
+        &:hover {
+            scale: 1.1;
+            transition: .5s;
+            z-index: 1000;
+        }
+
+        .chsburger {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            text-transform: uppercase;
+            text-shadow: 1px 2px 3px black;
+            display: none;
+        }
+
+        &:hover .chsburger {
+            display: block;
+
+        }
+    }
+
+    .egg {
+        height: 200px;
+        background-image: url(./IMG/sandwich-with-eggs-and-ham.jpg);
+        background-size: cover;
+        color: white;
+
+        &:hover {
+            scale: 1.1;
+            transition: .5s;
+            z-index: 1000;
+        }
+
+        .chsburger {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            text-transform: uppercase;
+            text-shadow: 1px 2px 3px black;
+            display: none;
+        }
+
+        &:hover .chsburger {
+            display: block;
+            transition: .5s;
+        }
+    }
+
+    .chuken {
+        background-image: url(./IMG/sandwich-toast.jpg);
+    }
+
+    .peperoni {
+        background-image: url(./IMG/pizza2.jpg);
+    }
+
+    .theking {
+        background-image: url(/IMG/burger5.jpg);
+    }
+
+}
+
+.section3 {
+    .container {
+        .row {
+            .text-cr {
+                height: 150px;
+                text-align: center;
+                align-items: center;
+                padding: 20px;
+
+                font-family: 'Oswald', sans-serif;
+            }
+        }
+
+    }
+}
+
+
+.yello {
+    height: 250px;
+    background-color: #FBC65C;
+
+
+    .ft-num {
+        font-size: 60px;
+        color: #fff;
+        background: #d3312a;
+        padding: 15px;
+        line-height: 1;
+        z-index: 2;
+        text-transform: uppercase;
+        display: inline-block;
+        transform: rotate(-6deg);
+        font-family: 'Oswald', sans-serif;
+    }
+
+    img {
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .ft-qust {
+        font-size: 30px;
+        margin-top: -5px;
+        margin-left: 30px;
+        font-weight: 700;
+        display: inline-block;
+        color: #fff;
+        background: #000;
+        padding: 10px;
+        z-index: 2;
+        text-transform: uppercase;
+        transform: rotate(-6deg);
+        font-family: 'Oswald', sans-serif;
+    }
+}
